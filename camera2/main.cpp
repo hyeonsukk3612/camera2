@@ -48,7 +48,10 @@ int main()
     // 이진화 영상 스트리밍
 
     Mat frame, gray, thread;
+    TickMeter timer;
+    
     while (true) {
+        timer.start();
         source >> frame;  // 카메라에서 프레임 읽기
         if (frame.empty()){ cerr << "frame empty!" << endl; break; }
         cvtColor(frame, gray, COLOR_BGR2GRAY);  // 그레이스케일 변환
@@ -57,6 +60,9 @@ int main()
         writer2 << gray;   // 그레이스케일 영상 스트리밍
         writer3 << thread; // 이진화 영상 스트리밍
         waitKey(30);  // 30ms 대기
+        timer.stop();
+		cout<<"time : "<<timer.getTimeMilli()<<"ms"<<endl;
+		timer.reset();
     }
     return 0;
 }
