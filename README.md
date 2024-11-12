@@ -15,3 +15,8 @@
 #이 프로그램은 실시간 영상 처리 및 네트워크 스트리밍을 수행하며, Jetson 보드의 하드웨어 가속 기능을 활용하여 효율적으로 동작하도록 설계되었습니다.
 #  결론
 #이를 통해 host=203.234.58.168에 port=8001 frame 영상 출력(원본영상), port=8002 gray 영상 출력(흑백 영상), port=8003 THRESH_BINARY 영상 출력(이진화 영상)을 30ms의 간격으로 출력할 수 있게 합니다.
+
+![캡처1](https://github.com/user-attachments/assets/35f55513-659f-4919-92a0-9664385bd98b)
+
+
+![캡처](https://github.com/user-attachments/assets/19a56914-8030-4486-885a-cef50dcfc630)
